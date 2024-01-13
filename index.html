@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>记账簿</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<script src="./index.js"></script>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>记账簿</h1>
+        </div>
+        <div class="main">
+            <div class="details">
+                <div class="details-title">
+                    你的资金平衡：
+                    <span  id="title">
+                        ￥0
+                    </span>
+                </div>
+                <div class="details-box">
+                    <div class="incomeTotal">
+                        <p>收入</p>
+                        <span id="num1">0</span>
+                    </div>
+                    <div class="payTotal">
+                        <p>支出</p>
+                        <span id="num2">0</span>
+                    </div>
+                </div>
+                <div class="details-title">
+                    收支记录：
+                </div>
+                <ul class="recordsList">
+                    <!--收支记录列表-->
+                    <!-- <li>
+                        <p class="recordName">水电</p>  
+                        <p class="recordMoney">-200</p>  
+                    </li>
+                    <li>
+                        <p class="recordName">勤工俭学</p>  
+                        <p class="recordMoney">+100</p>  
+                    </li> -->
+                </ul>
+            </div>
+            <form class="frm">
+                <div class="details-title">
+                    添加收支
+                </div>
+                <div class="frm-item">
+                    <label class="label">收支条目：</label>
+                    <input type="text" name="name" id="name" class="inputTxt" placeholder="不超过10个字符"/>
+                </div>
+                <div class="frm-item">
+                    <label class="label">金额（整数-收入，负数-支出）：</label>
+                    <input type="number" name="money" id="money" class="inputTxt"/>
+                </div>
+                <div class="frm-item" style="text-align: center">
+                    <button class="addBtn" id="btn">添加</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
